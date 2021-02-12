@@ -32,3 +32,10 @@ Ref. clock - 12.5 MHz
 The frequency of the ref. clock equals the frequency of the clock output divided by 8
 
 ![6](https://user-images.githubusercontent.com/44549567/107808170-272ddc80-6d8f-11eb-81e7-0c61be91d743.JPG)
+
+zoomed
+
+![7](https://user-images.githubusercontent.com/44549567/107808999-76c0d800-6d90-11eb-91d0-1b20e2a5bf2a.JPG)
+
+
+
