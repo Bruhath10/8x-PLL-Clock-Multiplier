@@ -37,5 +37,21 @@ zoomed
 
 ![7](https://user-images.githubusercontent.com/44549567/107808999-76c0d800-6d90-11eb-91d0-1b20e2a5bf2a.JPG)
 
+PFD Output
+
+![PD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028652-2ed0d800-7052-11eb-93bd-fd1a65b758ac.JPG)
+
+Charge Pump output
+
+![CP_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028884-88390700-7052-11eb-88fa-599bd994fe4c.JPG)
+
+VCO Output
+
+![vco_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028934-9c7d0400-7052-11eb-9c0b-7300844cc8c8.JPG)
+
+Frequency divider output
+
+![FD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028962-a999f300-7052-11eb-82b9-887b6d777ca8.JPG)
+
 
 
