@@ -58,6 +58,8 @@ From the results which I got above, I can say that after the control voltage ris
 
 From the outputs of the individual blocks (PD.cir, VCO.cir, CP.cir, and FD.cir), we can notice that the Phase differentiator output is not correctly detecting the difference between the phases of the reference and the output feedback signal. Hence the problem lies in the PD.cir.
 
+![PD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028652-2ed0d800-7052-11eb-93bd-fd1a65b758ac.JPG)
+
 We need to modify the PD.cir, i.e we need to change the sizes of the transistors in PD.cir as larger slew might be an issue. We keep the length of the PMOs same and increase the width of PMOS and see whether we get correct results.
 
 The pfets and nfets in the PD.cir are as shown:
