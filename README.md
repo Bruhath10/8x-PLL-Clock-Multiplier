@@ -82,7 +82,7 @@ The output of the PD.cir is as follows:
 
 ![4](https://user-images.githubusercontent.com/44549567/108543753-7d5ccb80-730b-11eb-8bb7-df7232a84cbc.JPG)
 
-Hence the PD output (UP and DN signals) showed significantly better results after the pfet width was increased.
+After increasing the width of wach instance and checking, the correct output was achieved with the increase in the width of instance 'XM4' pfet. Hence the PD output (UP and DN signals) showed significantly better results after the pfet width was increased.
 
 
 
