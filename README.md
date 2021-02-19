@@ -84,8 +84,15 @@ The output of the PD.cir is as follows:
 
 After increasing the width of each instance and checking, the correct output was achieved with the increase in the width of instance 'XM4' pfet. Hence the PD output (UP and DN signals) showed significantly better results after the pfet width was increased.
 
+The PLL output after modification in the PD part
 
+![5](https://user-images.githubusercontent.com/44549567/108555929-34614300-731c-11eb-9d37-b875d764ff72.JPG)
 
+![6](https://user-images.githubusercontent.com/44549567/108556351-e39e1a00-731c-11eb-87b1-ab4f4db3dc00.JPG)
+
+The output is much better than the output before the modification of PD. It still needs some changes to get the correct output. 
+
+According to the above result, the charge pump needs to be modified to get the proper control voltage.
 
 
 
