@@ -53,7 +53,7 @@ Frequency divider output
 
 ![FD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028962-a999f300-7052-11eb-82b9-887b6d777ca8.JPG)
 
-## Analysis
+## Analysis and next steps
 From the results which I got above, I can say that after the control voltage rises and starts saturating, the clk_out and outputs of the Phase detector (UP and DN signals) are getting terminated or becoming zero, and the 'clk_out by 8' signal is becoming a sharp triangular waveform unlike the square pulse we require.
 
 From the outputs of the individual blocks (PD.cir, VCO.cir, CP.cir, and FD.cir), we can notice that the Phase differentiator output is not correctly detecting the difference between the phases of the reference and the output feedback signal. Hence the problem lies in the PD.cir.
