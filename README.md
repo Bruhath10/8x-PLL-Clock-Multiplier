@@ -53,5 +53,40 @@ Frequency divider output
 
 ![FD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028962-a999f300-7052-11eb-82b9-887b6d777ca8.JPG)
 
+## Analysis
+From the results which I got above, I can say that after the control voltage rises and starts saturating, the clk_out and outputs of the Phase detector (UP and DN signals) are getting terminated or becoming zero, and the 'clk_out by 8' signal is becoming a sharp triangular waveform unlike the square pulse we require.
+
+From the outputs of the individual blocks (PD.cir, VCO.cir, CP.cir, and FD.cir), we can notice that the Phase differentiator output is not correctly detecting the difference between the phases of the reference and the outfut feedback signal. Hence the problem lies in the PD.cir.
+
+We need to modify the PD.cir, i.e we need to change the sizes of the transistors in PD.cir as larger slew might be an issue. We keep the length of the PMOs same and increase the width of PMOS and see whether we get correct results.
+
+The pfets and nfets in the PD.cir are as shown:
+
+![0](https://user-images.githubusercontent.com/44549567/108541670-bfd0d900-7308-11eb-94f7-b3e6aecd3c0b.JPG)
+
+The models of pfets are present in sky130_fd_pr__pfet_01v8__fs_discrete.corner.spice
+
+The maximum width available for a length of 1.5u is W = 7.0u or 7000n
+
+![1](https://user-images.githubusercontent.com/44549567/108542110-543b3b80-7309-11eb-8501-8b213120aa7a.JPG)
+
+Replacing the 'XM4' pfet instance width from w=640n to w=7000n
+
+![2](https://user-images.githubusercontent.com/44549567/108543356-f7408500-730a-11eb-99d3-1d4bc365d402.JPG)
+
+The output of the PD.cir is as follows:
+
+![3](https://user-images.githubusercontent.com/44549567/108543586-48507900-730b-11eb-8a0d-f43b97fde834.JPG)
+
+![4](https://user-images.githubusercontent.com/44549567/108543753-7d5ccb80-730b-11eb-8bb7-df7232a84cbc.JPG)
+
+Hence the PD output (UP and DN signals) showed significantly better results after the pfet width was increased.
+
+
+
+
+
+
+
 
 
