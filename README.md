@@ -56,7 +56,7 @@ Frequency divider output
 ## Analysis
 From the results which I got above, I can say that after the control voltage rises and starts saturating, the clk_out and outputs of the Phase detector (UP and DN signals) are getting terminated or becoming zero, and the 'clk_out by 8' signal is becoming a sharp triangular waveform unlike the square pulse we require.
 
-From the outputs of the individual blocks (PD.cir, VCO.cir, CP.cir, and FD.cir), we can notice that the Phase differentiator output is not correctly detecting the difference between the phases of the reference and the outfut feedback signal. Hence the problem lies in the PD.cir.
+From the outputs of the individual blocks (PD.cir, VCO.cir, CP.cir, and FD.cir), we can notice that the Phase differentiator output is not correctly detecting the difference between the phases of the reference and the output feedback signal. Hence the problem lies in the PD.cir.
 
 We need to modify the PD.cir, i.e we need to change the sizes of the transistors in PD.cir as larger slew might be an issue. We keep the length of the PMOs same and increase the width of PMOS and see whether we get correct results.
 
@@ -66,7 +66,7 @@ The pfets and nfets in the PD.cir are as shown:
 
 The models of pfets are present in sky130_fd_pr__pfet_01v8__fs_discrete.corner.spice
 
-The maximum width available for a length of 1.5u is W = 7.0u or 7000n
+The maximum width available for a length of 0.15u is W = 7.0u or 7000n
 
 ![1](https://user-images.githubusercontent.com/44549567/108542110-543b3b80-7309-11eb-8501-8b213120aa7a.JPG)
 
