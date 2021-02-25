@@ -8,10 +8,10 @@
 
 #### PLL
 
-![000](https://user-images.githubusercontent.com/44549567/109112763-29197780-7761-11eb-965b-0a0ddd23fac4.JPG)
-
 A PLL (Phase Locked Loop) is a control system which outputs a signal whose frequency and phase are locked in a constant relation to that of a reference signal, using a feedback
 mechanism. PLLs are mainly used in radio, telecommunications and computers as frequency synthesizers, FM and AM demodulators etc.
+
+![000](https://user-images.githubusercontent.com/44549567/109112763-29197780-7761-11eb-965b-0a0ddd23fac4.JPG)
 
 A PLL consists of a PFD (Phase Frequency Detector), a CP (Charge Pump), a Low pass filter, a VCO (Voltage Controlled Oscillator), and a Frequency divider.
 
