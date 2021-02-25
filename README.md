@@ -1,7 +1,42 @@
 # 8x-PLL-Clock-Multiplier
  
 ## Contents
+- Introduction
 - Pre-layout simulations
+
+## Introduction
+
+#### PLL
+
+![000](https://user-images.githubusercontent.com/44549567/109112763-29197780-7761-11eb-965b-0a0ddd23fac4.JPG)
+
+A PLL (Phase Locked Loop) is a control system which outputs a signal whose frequency and phase are locked in a constant relation to that of a reference signal, using a feedback
+mechanism. PLLs are mainly used in radio, telecommunications and computers as frequency synthesizers, FM and AM demodulators etc.
+
+A PLL consists of a PFD (Phase Frequency Detector), a CP (Charge Pump), a Low pass filter, a VCO (Voltage Controlled Oscillator), and a Frequency divider.
+
+A PFD is a circuit made of transistors which takes the reference signal and the feedback output signal as inputs and compares them for phase difference. It generates signals UP (if output lags ref. signal) and DN (if output leads ref. signal), proportional to the phase difference which are then given as inputs to the Charge Pump (CP).
+
+The Charge Pump is a three way switching circuit with a capacitor, which takes the UP and DN signals as inputs, and depending on which is high among UP and DN, corresponding switch is turned on and the capacitor is either charged or discharged. The voltage accross the capacitor is the output or the control signal to the VCO.
+
+The Low Pass Filter (LPF) is used in Phase Locked Loops (PLL) to get rid of the high frequency components from the output of the phase detector. It also removes the high frequency noise and helps control the dynamic characteristics of the whole circuit.
+
+The VCO is a circuit which takes a control voltage signal as input and generates a waveform whose frequency can be controlled by changing the control voltage. The relation between the output frequency and the voltage is approximately linear for small ranges.
+
+The frequency divider converts one frequency waveform to a waveform whose frequency is a multiple of the input frequency. This can be done using the concepts of feedback along with a D-flip flop for even dividers and an additional use of a mod-n counter for odd dividers.
+
+#### Process Corners:
+
+In VLSI system design, a process corner refers to variation of parameters from nominal values of a transistor on a silicon wafer as a part of DoE (Design of Experiments). The wafers are skewed to different corners to check the robustness of the design in the extremes.
+
+The process corners are generally characterized with two-letter notation, where 1st letter corresponds to the NMOS character and the second letter corresponds to the PMOS character. There are five corners: typical-typical (TT), fast-fast (FF), slow-slow (SS), slow-fast (SF), and fast-slow (FS). Here, in the two letter notation the first letter characterizes the NMOS behaviour and the second letter characterizes the PMOS behaviour. Ex. 'FS' denotes NMOS is Fast and PMOS is Slow. The TT, FF, SS corners are even corners as both the MOS are affected evenly, and the circuit is not adversely affected by them. The FS and SF corners are Skewed corners and affect the performance.
+
+#### Review of the existing PLL:
+
+An 8x PLL clock multiplier IP with an input frequency range of 5Mhz to 12.5Mhz and output frequency range of 40Mhz to 100Mhz was designed and implemented on TT corners by Lakshmi Sathi with the help of Google / SkyWater 130nm technology.
+
+The PFD used was designed using only 8 transistors, minimum area, and no dead-zone (the range of phase difference which the PFD cannot differentiate - considers it as zero). In regular CPs, the drain of NMOS tries to change the voltage, resulting in different Up and Down currents, hence an extra Op-Amp was added, which forces the voltage to be constant and regulates the manipulation of drain, resulting in equal currents (an ideal CP). The VCO was realized by the concept of ring oscillator, chain of inverters connected in series. The frequency divider was realized by using the concept of D-flip flop with negation of output as feedback to input. A frequency divider of 8 can be achieved by cascading multiple dividers. An effective circuit of D-flip flop with lesser transistors to reduce the delay was used.
+
 
 ## Pre-layout simulations
 
