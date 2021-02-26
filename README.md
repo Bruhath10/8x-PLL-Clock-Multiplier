@@ -177,15 +177,15 @@ The simulation analysis as of now:
 
 | Parameter     | Description   | min           | typ           | max           | Unit          | Conditions    |
 | ------------- | ------------- |---------------|---------------|---------------|-------------- |---------------|
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| VDD  | Digital Supply	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| FCLKREF  | Reference  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| FCLKOUT  | Output Clock	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| FCLKOUT  | Output Clock	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| JRMS  | Jitter (rms)	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| DC  | Duty Cycle	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| TSET | Settling Time	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| CL  | Load Capacitance  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| IDD  | Supply Current	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 
 
 
