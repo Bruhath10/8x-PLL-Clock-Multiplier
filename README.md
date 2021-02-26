@@ -179,9 +179,9 @@ The simulation analysis as of now:
 | ------------- | ------------- |---------------|---------------|---------------|-------------- |---------------|
 | VDD  | Digital Supply	  | -  | 1.8  | -  | V | T=27C |
 | FCLKREF  | Reference  | 5  | -  | 12.5  | MHz  | T=27C  |
-| FCLKOUT  | Output Clock	  | 220  | -  | 550  | MHz  | PLL mode  |
-| FCLKOUT  | Output Clock	  | -  | -  | -  | MHz  | Content Cell  |
-| JRMS  | Jitter (rms)	  | -  | -  | -  | ps  | Content Cell  |
+| FCLKOUT  | Output Clock	  | 220  | -  | 550  | MHz  | PLL mode, T=27C  |
+| FCLKOUT  | Output Clock	  | -  | -  | -  | MHz  | VCO mode, T=27C  |
+| JRMS  | Jitter (rms)	  | -  | -  | -  | ps  | PLL mode  |
 | DC  | Duty Cycle	  | Content Cell  | -  | x  | %  | T=27C |
 | TSET | Settling Time	  | Content Cell  | -  | x  | us  | T=27C |
 | CL  | Load Capacitance  | -  | -  | -  | fF  | T=27C  |
