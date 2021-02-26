@@ -62,6 +62,8 @@ All the nfet cells in fs.corner.spice whose W and L values are close to the curr
 Replacing the W and L values and running the simulation in ngspice.
 Ref. clock - 12.5 MHz
 
+![mod1 cir](https://user-images.githubusercontent.com/44549567/109337758-53ffea80-788b-11eb-9145-4b4554af9c5d.JPG)
+
 ![5](https://user-images.githubusercontent.com/44549567/107806290-a372f080-6d8c-11eb-8a2f-76903d62dd64.JPG)
 
 The frequency of the ref. clock equals the frequency of the clock output divided by 8
@@ -74,17 +76,25 @@ zoomed
 
 PFD Output
 
+![PDmod1](https://user-images.githubusercontent.com/44549567/109337849-709c2280-788b-11eb-80ca-1871b358a885.JPG)
+
 ![PD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028652-2ed0d800-7052-11eb-93bd-fd1a65b758ac.JPG)
 
 Charge Pump output
+
+![CPmod1](https://user-images.githubusercontent.com/44549567/109337890-7e51a800-788b-11eb-8ed2-d319fa1f21ab.JPG)
 
 ![CP_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028884-88390700-7052-11eb-88fa-599bd994fe4c.JPG)
 
 VCO Output
 
+![VCO_mod1](https://user-images.githubusercontent.com/44549567/109337945-8c072d80-788b-11eb-87ad-b50ec42b5530.JPG)
+
 ![vco_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028934-9c7d0400-7052-11eb-9c0b-7300844cc8c8.JPG)
 
 Frequency divider output
+
+![FDmod1](https://user-images.githubusercontent.com/44549567/109337960-945f6880-788b-11eb-89a3-7145bfd68d59.JPG)
 
 ![FD_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028962-a999f300-7052-11eb-82b9-887b6d777ca8.JPG)
 
@@ -113,6 +123,8 @@ Replacing the 'XM4' pfet instance width from w=640n to w=7000n
 
 The output of the PD.cir is as follows:
 
+![PDmod2](https://user-images.githubusercontent.com/44549567/109338934-ec4a9f00-788c-11eb-96e3-255a927d51e8.JPG)
+
 ![3](https://user-images.githubusercontent.com/44549567/108543586-48507900-730b-11eb-8a0d-f43b97fde834.JPG)
 
 ![4](https://user-images.githubusercontent.com/44549567/108543753-7d5ccb80-730b-11eb-8bb7-df7232a84cbc.JPG)
@@ -129,7 +141,33 @@ The output is much better than the output before the modification of PD. It stil
 
 According to the above result, the charge pump needs to be modified to get the proper control voltage.
 
+CP output of Lakshmi's
 
+![CP_PreLay_Leakage](https://user-images.githubusercontent.com/44549567/109339341-86124c00-788d-11eb-9a40-c6f3f5c9bd81.jpg)
+
+My initial CP output (CP_mod1.cir)
+
+![CP_mod1 cir output](https://user-images.githubusercontent.com/44549567/108028884-88390700-7052-11eb-88fa-599bd994fe4c.JPG)
+
+Now modifying the CP_mod1.cir, changing the W value of xm44 instance of the pfet from 420n to 7000n to get the correct rise during the stated time
+
+![CP1](https://user-images.githubusercontent.com/44549567/109339527-c8d42400-788d-11eb-9c5f-7795555881e1.JPG)
+
+![Cp2](https://user-images.githubusercontent.com/44549567/109339549-d093c880-788d-11eb-8a7b-eb41da394c50.JPG)
+
+Output of CP_mod2.cir
+
+![CPmod2](https://user-images.githubusercontent.com/44549567/109339612-e2756b80-788d-11eb-8029-111dd79317a7.JPG)
+
+![xm44 pfet W=7000n](https://user-images.githubusercontent.com/44549567/109339666-f6b96880-788d-11eb-987f-8bd50afaa09b.png)
+
+Now the CP output looks very much close to the Lakshmi's output
+
+Running the PLL after the above changes to the CP, PLL_Prelay_mod3.cir modified to PLL_Prelay_mod4.cir
+
+![mod4 cir](https://user-images.githubusercontent.com/44549567/109339836-3b450400-788e-11eb-8399-6a39efdcae5b.JPG)
+
+![Output after changing CP and PD pfets](https://user-images.githubusercontent.com/44549567/109339864-45670280-788e-11eb-953b-d9d48bc22477.JPG)
 
 
 
