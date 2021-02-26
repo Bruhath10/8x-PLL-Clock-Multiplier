@@ -169,6 +169,9 @@ Running the PLL after the above changes to the CP, PLL_Prelay_mod3.cir modified 
 
 ![Output after changing CP and PD pfets](https://user-images.githubusercontent.com/44549567/109339864-45670280-788e-11eb-953b-d9d48bc22477.JPG)
 
+![Output freq  44 times ref  freq](https://user-images.githubusercontent.com/44549567/109340426-02595f00-788f-11eb-8025-6523309b448d.JPG)
+
+The output clock frequency is nearly 44 times the reference clock frequency
 
 
 
