@@ -177,15 +177,15 @@ The simulation analysis as of now:
 
 | Parameter     | Description   | min           | typ           | max           | Unit          | Conditions    |
 | ------------- | ------------- |---------------|---------------|---------------|-------------- |---------------|
-| VDD  | Digital Supply	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| FCLKREF  | Reference  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| FCLKOUT  | Output Clock	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| FCLKOUT  | Output Clock	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| JRMS  | Jitter (rms)	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| DC  | Duty Cycle	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| TSET | Settling Time	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| CL  | Load Capacitance  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| IDD  | Supply Current	  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| VDD  | Digital Supply	  | -  | 1.8  | -  | V | T=27C |
+| FCLKREF  | Reference  | 5  | -  | 12.5  | MHz  | T=27C  |
+| FCLKOUT  | Output Clock	  | 220  | -  | 550  | MHz  | PLL mode  |
+| FCLKOUT  | Output Clock	  | -  | -  | -  | MHz  | Content Cell  |
+| JRMS  | Jitter (rms)	  | -  | -  | -  | ps  | Content Cell  |
+| DC  | Duty Cycle	  | Content Cell  | -  | x  | %  | T=27C |
+| TSET | Settling Time	  | Content Cell  | -  | x  | us  | T=27C |
+| CL  | Load Capacitance  | -  | -  | -  | fF  | T=27C  |
+| IDD  | Supply Current	  | -  | -  | -  | fF  | T=27C  |
 
 
 
